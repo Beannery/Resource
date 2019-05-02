@@ -7,23 +7,51 @@
 		<meta name="viewport" content="width=1200,user-scalable=yes">
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="icon" type="image/x-icon" href="" />
+		<script type="text/javascript" src="canvas-particle.js"></script>
 		<title>技术类博客整理</title>
 	</head>
-	<body>	
+	<body id="mydiv">
+<script type="text/javascript">
+		window.onload = function() {
+		    //配置
+		    var config = {
+		        vx: 4,	//小球x轴速度,正为右，负为左
+		        vy: 4,	//小球y轴速度
+		        height: 2,	//小球高宽，其实为正方形，所以不宜太大
+		        width: 2,
+		        count: 100,		//点个数
+		        color: "121, 162, 185", 	//点颜色
+		        stroke: "130,255,255", 		//线条颜色
+		        dist: 6000, 	//点吸附距离
+		        e_dist: 20000, 	//鼠标吸附加速距离
+		        max_conn: 10 	//点到点最大连接数
+		    }
+
+		    //调用
+		    CanvasParticle(config);
+		}
+	</script>	
   <div class="blog">Blog</div>
-  <div><a href="https://blog.csdn.net/evankaka/article/details/44153709#">java多线程</a></div>
-  <div><a href="https://blog.csdn.net/zhangerqing/article/details/8194653">java设计模式</a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
-  <div><a href=""></a></div>
+  <div><a href="https://tool.lu/">在线工具</a></div>
+  <div><a href="https://www.sojson.com/">Json在线解析工具</a></div>
+  <div><a href="https://tool.lu/timestamp/">时间戳工具</a></div>
+  <div><a href="https://blog.csdn.net/evankaka/article/details/44153709#">Java多线程</a></div>
+  <div><a href="https://blog.csdn.net/zhangerqing/article/details/8194653">Java设计模式</a></div>
+  <div><a href="https://blog.csdn.net/moshowgame/article/details/80275084">SpringBoot-WebSocket</a></div>
+  <div><a href="https://blog.csdn.net/maydaysar/article/details/56839617">Jvm总结</a></div>
+  <div><a href="https://blog.csdn.net/baidu_21578557/article/details/52075711">java对象与json对象间的相互转换</a></div>
+  <div><a href="https://blog.csdn.net/qq_21806621/article/details/79671257">SpringBoot-Redis</a></div>
+  <div><a href="https://blog.csdn.net/xiaochendefendoushi/article/details/80979905">Docker相关</a></div>
+  <div><a href="https://www.cnblogs.com/fingerboy/p/5456371.html">Java ClassLoader</a></div>
+  <div><a href="https://blog.csdn.net/qq_42846655/article/details/81454195">Java实现两个数组的合并</a></div>
+  <div><a href="https://www.cnblogs.com/lovekxc/articles/6899755.html">工具类静态方法调用@Autowired注入的service类</a></div>
+  <div><a href="https://www.cnblogs.com/zhaoyanhaoBlog/p/9362267.html">Java泛型</a></div>
+  <div><a href="https://blog.csdn.net/sinat_38259539/article/details/71799078">Java反射</a></div>
+  <div><a href="https://www.cnblogs.com/wangmeijian/p/4207433.html?tdsourcetag=s_pctim_aiomsg">Css优先级计算规则</a></div>
+  <div><a href="https://blog.csdn.net/evankaka/article/details/44153709">Java多线程</a></div>
+  <div><a href="https://blog.csdn.net/u011784767/article/details/78281384">Java动态代理</a></div>
+  <div><a href="https://blog.csdn.net/winter_chen001/article/details/78330687">SpringBoot-Swagger2</a></div>
+  <div><a href="https://blog.csdn.net/HcJsJqJSSM/article/details/80977735">SpringBoot基于阿里云OSS上传文件</a></div>
+  <div><a href="">	</a></div>
 	</body>
 </html>
